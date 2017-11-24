@@ -1,0 +1,172 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+\usepackage{blindtext, graphicx}
+\usepackage{cite}
+\usepackage[cmex10]{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\pdfminorversion=4
+\usepackage{pifont}
+\usepackage{marvosym}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tabulary}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage[table]{xcolor}
+\definecolor{tableShade}{HTML}{DDDDDD}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{floatflt}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{ifthen}
+%\usepackage{amsthm}
+\usepackage[font=small,skip=0pt]{caption}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% For pseudocode writing
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{eqparbox}
+\algnewcommand{\IfThenElse}[3]{% \IfThenElse{<if>}{<then>}{<else>}
+  \State \algorithmicif\ #1\ \algorithmicthen\ #2\ \algorithmicelse\ #3}
+\algnewcommand\algorithmicinput{\textbf{Initialize:}}
+\algnewcommand\Initialize{\item[\algorithmicinput]}
+% \ifCLASSINFOpdf
+
+% \else
+ 
+% \fi
+
+\newcommand{\psdleq}{\preccurlyeq}
+\newcommand{\psdgeq}{\succcurlyeq}
+
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+Title
+}
+% \author{Albert Author$^{1}$ and Bernard D. Researcher$^{2}$% <-this % stops a space
+% \thanks{*This work was not supported by any organization}% <-this % stops a space
+% \thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+%         University of Twente, 7500 AE Enschede, The Netherlands
+%         {\tt\small albert.author@papercept.net}}%
+% \thanks{$^{2}$Bernard D. Researcheris with the Department of Electrical Engineering, Wright State University,
+%         Dayton, OH 45435, USA
+%         {\tt\small b.d.researcher@ieee.org}}%
+% }
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+
+
+\begin{document}
+%\title{Weighted Kalman Filter for Attack Detection and Robust State Estimation}
+
+%\author{\IEEEauthorblockN{Michael Shell}
+%\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
+%Georgia Institute of Technology\\
+%Atlanta, Georgia 30332--0250\\
+%Email: http://www.michaelshell.org/contact.html}
+%\and
+%\IEEEauthorblockN{Homer Simpson}
+%\IEEEauthorblockA{Twentieth Century Fox\\
+%Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\and
+%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
+%\IEEEauthorblockA{Starfleet Academy\\
+%San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212\\
+%Fax: (888) 555--1212}}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{abstract}
+
+% \end{abstract}
+
+
+
+% \section{Introduction} \label{sec:intro}
+% \input{secs/Introduction}
+
+\section{Prior Art}
+\label{sec:prior}
+\input{secs/Priorart}
+
+\section{Preliminaries and Problem Description} 
+\label{sec:prelim}
+\input{secs/Background}
+
+
+% \section{Methodology} \label{sec:method}
+% \input{secs/Methodology}
+
+%\section{Experimental Results} \label{sec:demo}
+%\input{secs/Results}
+
+%\vspace{-0.1cm}
+
+%\section{Conclusion} \label{sec:conclude}
+%\input{secs/6-conclusion}
+
+
+
+%\appendices
+%\section{Proof of the First Zonklar Equation}
+
+
+% \section*{Acknowledgment}
+
+% The work presented in this paper is supported by National Science Foundation, grant \#
+% \ifCLASSOPTIONcaptionsoff
+%   \newpage
+% \fi
+
+\bibliographystyle{ieeetr}
+\bibliography{cps}
+
+
+% \section{Notes}\label{sec:notes}
+% \input{secs/7-notes}
+
+%\section{Summary of Other Papers}
+%\input{secs/2-priorart}
+\end{document}
+
+% Input: Observation y' in Algorithm 1 changed from y
+
+

@@ -1,0 +1,22 @@
+\subsection{Car-Following Model of Truck Platoon}
+
+
+\subsection{Attack Model}
+
+We consider an adversary that can control $m$ out of $n$ trucks (where, $m \leq n/2$) of a Driver Assistive Truck Platoon (DATP). The trucks uses radar and vehicle-to-vehicle (V2V) communication to drive longitudinally in a close-headway formation at highway speeds and to maintain a safe gap with the preceding vehicle. By remotely exploiting vulnerability in $m$ truck's communication software, an attacker can hijack V2V's message transmission unit. Subsequently, by injecting malicious messages in the communication network of $(n-m)$ trucks, an adversary intends to impact the string stability of the platoon.  We assume that the leader of the platoon is not attacked and we do not know the $m$ attacked vehicles. Thus, the first goal is to detect the attacked trucks. The next goal is to identify the minimum number of trucks $m$, an adversary should attack to destabilize the platoon. 
+
+In the second attack model, we consider multiple vehicles communicating via V2V in a multilane highway. The vehicles broadcast Basic Safety Messages (BSM) to its neighboring vehicles. An adversary in control of one of the V2V equipped car can broadcast corrupted BSM with the intention of influencing the direction of motion of the vehicles. Thus, the goal is to design control law that can guarantee resilient coordinated motion of vehicles \cite{SSPPK17}.       
+
+%\subsection{Problem Description}
+
+
+
+
+
+% \begin{itemize}
+%     \item How does authentication work in VPKI? 
+%     \item If a malicious car injects messages, how are the data validated or is any message accepted? 
+%     \item Attack on sensor. Attack on network
+%     \item How many vehicles are required for consensus algorithm to work correctly? 
+%     \item Ramp condition for trucks not considered
+% \end{itemize}
